@@ -21,32 +21,34 @@ public class main {
 		String managedData = "resource/2月test1WmanagedData.txt";
 		String Ksource="resource/k.txt";//存放K的取值的文本
 		
-		/*DeleteSymbol ds=new DeleteSymbol();
-		ds.deletesymbol(datasource);
-	    CreateTFIDFMatrix cx = new CreateTFIDFMatrix();
-		cx.OneGo(datasource,matrixPath,uselessClass,managedData);*/
+	//	DeleteSymbol ds=new DeleteSymbol();
+	//	ds.deletesymbol(datasource);
+	//  CreateTFIDFMatrix cx = new CreateTFIDFMatrix();
+	//	cx.OneGo(datasource,matrixPath,uselessClass,managedData);
 			
 		String CSRPath = "resource/2月test1Wcsr矩阵";
 		String clusterResult="resource/cluster";
 		FindK f = new FindK();
-//		ClusterByKMeans.createCSR(matrixPath, CSRPath);
+//	    ClusterByKMeans.createCSR(matrixPath, CSRPath);
 //		K=f.findkbySilhouette(Ksource, CSRPath,clusterResult);	    //数据少时可以选用此方法计算（1万条左右）
 //		K=f.findkbyInertia(Ksource, CSRPath,clusterResult);         //数据多时可以选用此方法计算
 		
-
+       
+		
 		String clusterResultPath=clusterResult+K+".txt";
 		String filefloderpath="resource/2月test1WK";
 		String keywordspath="resource/2月test1W关键词";
 		String outputpath="resource/2月test1W热点问题";
 		//找到对应问题存入文件夹
-		/*Clusterresult.clusterresult(managedData, K,clusterResultPath, filefloderpath);		
-	    FindClusterKeyword.conclusionKeyWords(filefloderpath, keywordspath);
-		FindTypecial.fineTypecialQuestion(filefloderpath, keywordspath, outputpath);
-		*/
+		 K=25;
+	//	Clusterresult.clusterresult(managedData, K,clusterResultPath, filefloderpath);		
+	//   FindClusterKeyword.conclusionKeyWords(filefloderpath, keywordspath);
+	//	FindTypecial.fineTypecialQuestion(filefloderpath, keywordspath, outputpath);
+		
 				
 		String classname="resource/2月test1WClassname.txt";
 		String alldataResult="resource/2月test1W全部数据的单独分类.txt";
-		/*Process pro=new Process();
-		pro.OrderProcess(filefloderpath,classname,keywordspath,alldataResult,uselessClass);	*/	
+		Process pro=new Process();
+		pro.OrderProcess(filefloderpath,classname,keywordspath,alldataResult,uselessClass);		
 	}
 }

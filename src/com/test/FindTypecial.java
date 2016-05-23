@@ -35,7 +35,7 @@ public class FindTypecial {
 			line = bufferedReader.readLine();
 			temp = line.split(" ");
 			count = count + 1;
-			for (int j = 0; j < typecialnumber; j++) {
+			for (int j = 0; j < typecialnumber && j<temp.length; j++) {
 				temp2 = temp[j].split("=");
 				temp3[j] = temp2[0];
 			}
