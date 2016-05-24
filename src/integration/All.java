@@ -16,9 +16,11 @@ public class All {
 	String path ="";
 	int K=0;
 	
-	All(String floder_path){
+	public All(String floder_path){
 		path=floder_path;
 	}
+	
+	
 	
 	
 	public void three_in_one(boolean i) throws UnsupportedEncodingException, IOException{
@@ -99,7 +101,7 @@ public class All {
 		  k.txt
 		 */
 		All for_test = new All("Testresource");
-		for_test.three_in_one(true);
+//		for_test.three_in_one(true);
   //  	for_test.first_step();
   //    for_test.second_step(true);
   //    for_test.third_step();

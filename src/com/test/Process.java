@@ -38,10 +38,11 @@ public class Process {
 				for (int j = 0; j < cnamelist.size() - 2; j++) {
 					String[] cnl = cnamelist.get(j).split("\\|\\&\\|");
 					String cc = cnl[0];
-					String[] xh = cc.split("\\\\|\\+");
-					if (filenn[2].equals(xh[1]))// 类的序号与类名中的序号匹配
+					System.out.println(cc);
+				//	String[] xh = cc.split("\\\\|\\+");
+					if (filenn[2].equals(cc))// 类的序号与类名中的序号匹配
 					{
-						System.out.println(filenn[2]+"   "+xh[1]);
+						System.out.println(filenn[2]+"   "+cc);
 						bigcla = cnl[2];
 						smallcla = cnl[1];
 					}
